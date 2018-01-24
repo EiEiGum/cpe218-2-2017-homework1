@@ -8,6 +8,8 @@ public class Node {
         left = le;
         right = ri;
     }
-
+    public String toString(){
+        return node;
+    }
 
 }

@@ -7,9 +7,9 @@ public class Homework1
 	public static void main (String[] args)
 	{
 		Node Lastnode = null;
-		if (args.length > 0)
+		if (args.length == 0)
 		{
-			String input = args[0];
+			String input = "251-*32*+";
 
 			for (int j = 0; j < input.length(); j++)
 			{
@@ -21,7 +21,10 @@ public class Homework1
 			Lastnode = (Node)st.pop();
 			String out = inorder(Lastnode);
 			System.out.println(out.substring(1,out.length()-1) + "=" + calculate(Lastnode) );
+
 		}
+
+		TreeIconDemo2.main(Lastnode);
 
 	}
 
